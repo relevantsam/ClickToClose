@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { ClickToCloseDirective } from './click-to-close.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ClickToCloseDirective
   ],
   imports: [
     BrowserModule,
