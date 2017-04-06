@@ -11,7 +11,7 @@ export class ClickToCloseDirective implements OnInit {
 
   @HostListener('click', ['$event']) // let's do something when someone clicks this
   onClick(e: MouseEvent) {
-    this.status = !this.status; // toggle this bad hambre
+    this.status = !this.status; // toggle this bad hombre
     this.statusUpdate.emit(this.status); // let the caller know what we did so they can take care of stuff
     if (this.status) { // if we just turned it on, let's do some stuff
       e.stopPropagation(); // we're about to mess with this event, let's not let the browser do weird stuff with it
